@@ -17,27 +17,6 @@ Remaster of my prior MangoAddons
 *By default, the item is Volcanic Rock.  You can change this by altering functions in the main file*
 
 - The functions *createBuyOrder()* and *createSellOrder()* are the only functions that need ot be altered
-- The format for these funtions are as follows
-
-def createBuyOrder():
-    print("[FUNCTION] createBuyOrder()")
-    print("[INFO] Creating buy order...")
-    noSus("bz")
-    pag.press("enter")
-    ml.clickSix(3, 4) 
-    ml.clickFour(3, 2) 
-    ml.clickFour(7, 2)
-    ml.clickFour(7, 2)
-    ml.clickFour(8, 2)
-    time.sleep(0.2)
-    pag.press("1")
-    time.sleep(0.2)
-    ml.clickAbsolute(1278, 749)
-    ml.clickFour(4, 2)
-    ml.clickFour(5, 2)
-    time.sleep(0.5)
-    pag.press("/")
-
 - Change the *clickSix()* function to navigate to your category, you will need two "six" functions if your item is not in the oddities category by default
 - Change the click functions to navigate and buy order your item [A grid system is used, where the args are the X, Y values]
 - Repeat the same for the sell function as well
